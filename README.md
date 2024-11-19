@@ -37,7 +37,9 @@ ZapContact é uma extensão para Chrome que permite extrair contatos do WhatsApp
 ## 📦 Instalação
 
 1. Clone o repositório
-
+```bash
+git clone https://github.com/vxc333/zap-contact.git
+```
 2. Instale as dependências
 ```bash
 npm install
