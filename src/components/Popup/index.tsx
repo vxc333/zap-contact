@@ -60,7 +60,7 @@ export default function Popup({ children }: PopupProps) {
   } = theme.useToken();
 
   return (
-    <div className="w-[500px] h-max-[600px] text-xl flex flex-col text-gray-200 bg-green-700 bg-opacity-70 ">
+    <div className="w-[600px] h-max-[600px] text-xl flex flex-col text-gray-200 bg-green-700 bg-opacity-70 ">
       <Layout>
         <Sider trigger={null} collapsible collapsed={collapsed}>
           {collapsed ? (
