@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Zap Contact",
+  "version": "1.0",
+  "description": "Uma extensão para extrair contatos de grupos no WhatsApp Web.",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://web.whatsapp.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["content.js"],
+      "matches": ["https://web.whatsapp.com/*"]
+    }
+  ]
+}
