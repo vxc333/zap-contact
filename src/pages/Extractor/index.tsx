@@ -142,13 +142,13 @@ END:VCARD`;
               }
               disabled={isLoading}
             >
-              <Radio.Button value="all" className="w-1/3 text-center">
+              <Radio.Button value="all" className="w-1/3 h-16 flex items-center justify-center text-center px-1 leading-tight">
                 Todos
               </Radio.Button>
-              <Radio.Button value="archived" className="w-1/3 text-center">
+              <Radio.Button value="archived" className="w-1/3 h-16 flex items-center justify-center text-center px-1 leading-tight">
                 Arquivados
               </Radio.Button>
-              <Radio.Button value="unarchived" className="w-1/3 text-center">
+              <Radio.Button value="unarchived" className="w-1/3 h-16 flex items-center justify-center text-center px-1 leading-tight">
                 Não Arquivados
               </Radio.Button>
             </Radio.Group>
