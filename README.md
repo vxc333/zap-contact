@@ -1,50 +1,77 @@
-# React + TypeScript + Vite
+# ZapContact - Extensão para WhatsApp Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📱 Sobre
+ZapContact é uma extensão para Chrome que permite extrair contatos do WhatsApp Web de forma organizada e eficiente.
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📋 Extração de contatos do WhatsApp Web
+- 🔍 Filtros por tipo de contato:
+  - Todos os contatos
+  - Apenas contatos salvos
+  - Apenas contatos não salvos
+- 📂 Filtros por status:
+  - Todos
+  - Arquivados
+  - Não arquivados
+- 💾 Exportação em diferentes formatos:
+  - CSV (compatível com Excel)
+  - vCard (para importação direta em smartphones)
+- 🎯 Opções de campos para exportação:
+  - Apenas números
+  - Nome e número
 
-## Expanding the ESLint configuration
+## 🔒 Sistema de Licença
+- Sistema de autenticação por código
+- Controle de dias de acesso
+- Gestão de usuários autorizados
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🛠️ Tecnologias Utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- TypeScript
+- Ant Design
+- TailwindCSS
+- Chrome Extension API
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Instalação
+
+1. Clone o repositório
+
+2. Instale as dependências
+```bash
+npm install
+```
+3. Faça o build do projeto
+```bash
+npm run build
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+4. Carregue a extensão no Chrome:
+   - Abra o Chrome e vá para `chrome://extensions/`
+   - Ative o "Modo do desenvolvedor"
+   - Clique em "Carregar sem compactação"
+   - Selecione a pasta `dist` do projeto
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🚀 Como Usar
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Faça login na extensão usando seu código de acesso
+2. Abra o WhatsApp Web
+3. Clique na extensão ZapContact
+4. Selecione os filtros desejados
+5. Clique em "Extrair"
+6. Após a extração, clique em "Baixar Contatos" no formato desejado
+
+## ⚠️ Observações
+
+- A extensão funciona apenas com o WhatsApp Web aberto
+- É necessário ter uma licença válida para utilizar
+- Alguns contatos podem não ser detectados dependendo das configurações de privacidade
+
+## 🤝 Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
+
+## 📄 Licença
+
+Este projeto está sob licença privada.
